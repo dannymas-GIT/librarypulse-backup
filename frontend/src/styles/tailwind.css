@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-4;
+  }
+  
+  .metric-card {
+    @apply flex items-start space-x-4;
+  }
+  
+  .metric-icon {
+    @apply p-2 rounded-lg;
+  }
+  
+  .metric-value {
+    @apply text-2xl font-bold text-gray-900;
+  }
+  
+  .metric-label {
+    @apply text-sm text-gray-600;
+  }
+  
+  .nav-link {
+    @apply flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors duration-150;
+  }
+  
+  .nav-link:hover {
+    @apply text-blue-600 bg-blue-50;
+  }
+  
+  .nav-link-active {
+    @apply text-blue-600 bg-blue-50;
+  }
+} 
